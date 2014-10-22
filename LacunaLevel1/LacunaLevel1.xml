@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<data>
+	<level width="25" height="15" />
+	<gravity X="0" Y="9.8"/>
+	<man x="0" y="9" friction="0.3" restitution="0" density="1" inventoryX="0" inventoryY="14" width="25" height="1" />
+	<staticobjs>
+		<staticobj type="wall" width="2" height="1" x="0" y="6" friction="0.3" restitution="0" />
+		<staticobj type="wall" width="9" height="1" x="0" y="10" friction="0.3" restitution="0" />
+		<staticobj type="wall" width="7" height="1" x="0" y="2" friction="0.3" restitution="0"/>
+		<staticobj type="wall" width="2" height="1" x="7" y="4" friction="0.3" restitution="0"/>
+		<staticobj type="wall" width="1" height="2" x="6" y="3" friction="0.3" restitution="0"/>
+		
+		<staticobj type="wall" width="5" height="1" x="14" y="11" friction="0.3" restitution="0"/>
+		<staticobj type="wall" width="1" height="3" x="14" y="12" friction="0.3" restitution="0"/>
+		<staticobj type="wall" width="3" height="1" x="18" y="8.5" friction="0.3" restitution="0"/>
+		<staticobj type="wall" width="3" height="1" x="22" y="10" friction="0.3" restitution="0"/>
+		<staticobj type="wall" width="5" height="1" x="21" y="6" friction="0.3" restitution="0"/>
+		<staticobj type="wall" width="4" height="1" x="21" y="3" friction="0.3" restitution="0"/>
+		
+		<staticobj type="wall" width="25" height="1" x="0" y="14" friction="0.3" restitution="0"/>
+		
+		<staticobj type="teleporter" x="1" y="1" friction="0.3" restitution="0" pairindex="1" />
+		<staticobj type="teleporter" x="24" y="5" friction="0.3" restitution="0" pairindex="0" />
+	</staticobjs>
+	
+	<specobjs>
+		<specobj type="movingplatform" width="2" height="1" horizontal="1" constval="5" startval="10" endval="20" vel="3" friction="0.5"/>
+		<!--<specobj type="movingplatform" width="2" height="1" horizontal="2" constval="2" startval="5" endval="9" vel="3" friction="0.5"/>	
+		-->
+		<specobj type="raycast" sprite="1" x="2" y="10" startX="2" startY="11" endX="6" endY="14" />
+		<specobj type="raycast" sprite="2" x="6" y="1" startX="6" startY="1" endX="21" endY="7" />
+		<specobj type="raycast" sprite="3" x="7" y="0" startX="8" startY="3" endX="8" endY="0" />
+		<specobj type="raycast" sprite="3" x="16" y="11" startX="16" startY="11" endX="18" endY="11" />
+		
+		<specobj type="killer" sprite="1" x="21" y="5"/>
+		<!--<specobj type="killer" sprite="3" x="4" y="3"/>-->
+		
+		<!--<specobj type="collectable" sprite="1" x="11" y="10" width="4" putX="-1" putY="-1" />-->
+		<specobj type="collectable" sprite="2" x="16" y="12" width="1" putX="15" putY="10" />
+		<specobj type="collectable" sprite="4" x="4" y="1" width="1" putX="9" putY="13" />
+		
+		<specobj type="pushbutton" event="firegun" x="17" y="13" repeat="1" />
+		<specobj type="pushbutton" event="dropbox" x="6" y="9" repeat="0" />
+		
+		<specobj type="antigravity" x="16" y="12" width="9" height="2" />
+		
+	</specobjs>
+	
+	<clues>
+		<clue x="0" y="4" level="1" image="Level1Ques/Clue 1.jpg" />
+		<clue x="18" y="7.5" level="1" image="Level1Ques/Clue 2.png" />
+		<clue x="2" y="1" level="1" image="Level1Ques/Clue 3.png" />
+		<clue x="23" y="5" level="1" image="Level1Ques/Clue 4.png" />
+		<clue x="0" y="13" level="1" image="Level1Ques/Clue 5.png" />		
+	</clues>
+	
+	<exit x="24" y="2" />
+</data>
